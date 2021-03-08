@@ -3,6 +3,10 @@
 #### Description
 Shane的一个倒垃圾项目
 
+#### Packages included
+1. Fraction
+    A fraction class in python.
+
 #### Software Architecture
 Software architecture description
 
