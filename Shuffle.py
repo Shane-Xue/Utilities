@@ -13,17 +13,23 @@ def PokerShuffle(origin,times=5):
     """
     randint=numpy.random.randint
     shuffled=origin
-    for a in range(n):
+    for a in range(times):
         shuffling=[]
-        first=[:len(shuffled)//2]
-        second=[len(shuffled)//2:]
+        first=shuffled[:(len(shuffled)//2)]
+        second=shuffled[len(shuffled)//2:]
         while first!=[] and second!=[]:
             get1=randint(1,4)
             get2=randint(1,4)
             for a in range(get1):
+                if first==[]:
+                    break
                 shuffling.append(first.pop())
             for a in range(get2):
+                if second==[]:
+                    break
                 shuffling.append(second.pop())
+        if first==second:
+            return shuffled
         if first==[]:
             for a in second:
                 shuffling.append(a)
@@ -34,9 +40,22 @@ def PokerShuffle(origin,times=5):
     return shuffled
 
 def shuffle(listlike,start,end):
-    for i in range (start,end,-1):
+    for i in range (end-1,start,-1):
         rand=numpy.random.randint(start,i)
         listlike[i],listlike[rand]=listlike[rand],listlike[i]
 
+def _test():
+    lst=[]
+    for a in range(10**5):
+        lst.append(a)
+    time1=time.time()
+    shuffle(lst,0,len(lst)-1)
+    time2=time.time()
+    tt=time2-time1
+    print(tt)
 
+if __name__ == '__main__':
+    import time
+    _test()
+    del time
     
