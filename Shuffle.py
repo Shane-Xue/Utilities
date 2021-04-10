@@ -40,9 +40,10 @@ def PokerShuffle(origin,times=5):
     return shuffled
 
 def shuffle(listlike,start,end):
+    listlike1=listlike
     for i in range (end-1,start,-1):
         rand=numpy.random.randint(start,i)
-        listlike[i],listlike[rand]=listlike[rand],listlike[i]
+        listlike1[i],listlike1[rand]=listlike1[rand],listlike1[i]
 
 def _test():
     lst=[]
