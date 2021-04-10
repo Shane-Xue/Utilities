@@ -1,0 +1,19 @@
+License declarations for the Utility package by Zaiyou (Shane) Xue
+(Released at gitee.com/Shane-Xue-utilities)
+(License version 20210410, first edition)
+(c) Zaiyou Xue, 2021, All Rights Reserved
+This software is free software; it was written in the hope that it would
+provide some useful wheels for developing in the Python language. Copyright
+belongs to the author Zaiyou Xue.
+Notice that the software comes WITHOUT ANY WARRENTY AND WITHOUT ANY GUARANTEES;
+Xue will not be responsible for any negative consequences using this software
+might bring.
+You are free to and even ENCOURAGED to distribute this software, under the
+circumstances that you do keep this license in the package, preserve the 
+copyright declarations that might occur in any file in this package, and make
+sure your redistribution is WITHOUT CHARGE. Selling any piece of these code
+should be illegal. However, if you are using this code in a bigger project that
+will be distributed for a fee, the author is still happy to let you use it, as 
+long as you contact him at shane26@sina.cn and state the purpose.
+Please do not violate the rules in this simple license or you may face
+consequences.
