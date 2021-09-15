@@ -1,9 +1,9 @@
 import time
 # class and function to make runtime more readable
 unit = {
-    "decade": 365.24*3600*24,
+    "decade": 365*3600*24*10,
     # seriously? I decided to use 364.25 for a year! haha!
-    "year": 365.24*3600*24,
+    "year": 365*3600*24,
     # year is 365 days
     "month": 30*60*60*24,
     # month is 30 days
